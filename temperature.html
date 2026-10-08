@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS v4 CDN</title>
+  <!-- Tailwind CSS v4 Browser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white h-89 w-67 rounded flex flex-col  items-center p-4 gap-4 border-1">
+    <h1 class="font-bold text-xl">🎚️ TemScale</h1>
+    <input type="text" name="" id="temperature" value=""  class=" rounded w-full border-1 " placeholder="Enter trmperature"/>
+    <p>from:</p>
+    <select id="fromUnit" class="border-1 px-9 rounded">
+  <option value="celsius">Celsius</option>
+  <option value="fahrenheit">Fahrenheit</option>
+  <option value="kelvin">Kelvin</option>
+</select>
+<p>to:</p>
+<select id="toUnit" class="border-1 px-9 rounded">
+  <option value="fahrenheit">Fahrenheit</option>
+  <option value="celsius">Celsius</option>
+  <option value="kelvin">Kelvin</option>
+</select>
+  <button
+  type="button"
+  id="convertBtn"
+  class="bg-green-400 text-white w-full rounded text-md py-1 cursor-pointer hover:bg-green-600"
+>
+  Convert
+</button>
+  <input type="text" name="" id="result" value="" readonly  class=" rounded w-full bg-black/9 h-17"/>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
